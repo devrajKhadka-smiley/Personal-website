@@ -1,0 +1,10 @@
+body {
+  background: #1B1B25;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+}
+.btn btn2{
+  display: inline-block;
+  background:#ff004f;
+}

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Software Engineer, Devtest, Cyberlearner" />
+    <meta name="keywords" content="Personal Cv, cv, portfolio, devtest" />
+    <meta name="author" content="Dev Raj Khadka" />
+    <title>Devtest</title>
+    <!-- title image -->
+    <link rel="icon" type="image/png" href="images/d logo.png">
+
+    <!-- css file link -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/aboutstyle.css">
+
+    <!-- main css file | javascript css library cloudflare -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="./js/script.js"></script>
+
+    <!-- internal css -->
+    <style>
+        .cursor {
+            height: 50px;
+            width: 50px;
+            display: block;
+            border-radius: 50%;
+            border: 1px solid whitesmoke;
+            background: transparent;
+            pointer-events: none;
+            position: fixed;
+            top: -25px;
+            left: -25px;
+            z-index: 10;
+            opacity: .6;
+            transition: scale .5s ease;
+        }
+
+        .cursor-small {
+            height: 50px;
+            width: 50px;
+            display: block;
+            border-radius: 50%;
+            border: 1px solid whitesmoke;
+            background: transparent;
+            pointer-events: none;
+            position: fixed;
+            top: -25px;
+            left: -25px;
+            z-index: 10;
+            opacity: .6;
+            transition: scale .4s ease;
+        }
+
+        .navigation_menu {
+            text-align: right;
+            margin-top: -5px;
+        }
+
+        .navigation_menu li {
+            display: inline-block;
+            margin-top: 40px;
+            position: relative;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navigation_menu a {
+            text-decoration: none;
+            color: #716d6d;
+            text-align: justify;
+            margin-right: 50px;
+            margin: 0px, 0px;
+        }
+
+        #about {
+            padding: 80px 0px;
+            color: #ababab;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .about-col-1 {
+            flex-basis: 35%;
+        }
+
+        .about-col-1 img {
+            width: 100%;
+            border-radius: 15px;
+            margin-left: 40px;
+        }
+
+        .about-col-2 {
+            flex-basis: 50%;
+            height: auto;
+        }
+
+        .footer {
+            /* background: #080808; */
+            width: 100%;
+            padding: 10px;
+            color: whitesmoke;
+            display: flex;
+            flex-direction: row;
+            font-family: poppins;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer .footer-text {
+            position: relative;
+            display: inline;
+            font-size: 18px;
+            font-weight: 400;
+            opacity: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- main container -->
+    <div id="all">
+
+        <!-- mouse curor change -->
+        <div class="cursor"></div>
+
+        <!--loader-->
+        <div id="loader">
+            <span class="color">Dev Raj </span>Khadka
+        </div>
+        <!--loader-end-->
+
+        <!--link-screen-->
+        <div id="breaker">
+        </div>
+        <div id="breaker-two">
+        </div>
+
+    </div>
+    <!--link-screen-->
+
+    <!--Header-->
+
+    <div class="navigation_menu">
+        <nav>
+            <ul>
+                <li><a href="index.html" id="home-menu">Home</a></li>
+                <li><a href="#" id="work-menu">Work</a></li>
+                <li><a href="#" id="Contact-menu">Contact</a></li>
+                <!-- <li><a href="#" id="about-menu">About</a></li> -->
+                <li><a href="/cv/index.html" id="cv-page">cv</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- end of the navigation menu -->
+
+    <div id="header"> <!--all about background-->
+        <div id="particles"></div>
+        <div id="about-content">
+            <div class="about-header">
+                Know About <span class="color">Me</span>
+            </div>
+            <br>
+            <div class="all about ">
+                <section class="about-section sec-padding">
+                    <div class="about">
+                        <div class="container">
+                            <div class="row">
+                                <div class="about-col-1">
+                                    <img src="./images/1.jpg">
+                                </div>
+                                <div class="about-col-2">
+                                    <div class="about-text">
+                                        <p style="text-align: justify; margin-right: 30px;">Hi, i am <span
+                                                class="color"> Dev Raj Khadka</span> </p>
+                                        <h3 style="color: lightseagreen;">Skills, Technique</h3>
+                                        <div class="skills">
+                                            <div class="skill-items">Web developement</div>
+                                            <div class="skill-items">Project Management</div>
+                                            <div class="skill-items">Graphic Design</div>
+                                            <div class="skill-items">Cloud Computing</div>
+                                            <div class="skill-items">Arduino, Raspberrry Pi</div>
+                                            <div class="skill-items"> Linux Server</div>
+                                        </div>
+                                        <br>
+                                        <div class="about-tabs">
+                                            <button type="button" class="tab-item active"
+                                                data-target="#education">education</button>
+                                            <button type="button" class="tab-item"
+                                                data-target="#experience">experience</button>
+                                        </div>
+                                        <!-- education starts -->
+                                        <div class="tab-content active" id="education">
+                                            <div class="timeline">
+                                                <div class="timeline-item">
+                                                    <span class="date">2013-2016</span>
+                                                    <h4>bachelor of technology -<span>uk university</span></h4>
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                        Excepturi odit
+                                                        delectus, nobis temporibus deleniti quod maxime in ducimus
+                                                        nostrum voluptas?
+                                                    </p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <span class="date">2013-2016</span>
+                                                    <h4>bachelor of technology -<span>uk university</span></h4>
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                        Excepturi odit
+                                                        delectus, nobis temporibus deleniti quod maxime in ducimus
+                                                        nostrum voluptas?
+                                                    </p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <span class="date">2013-2016</span>
+                                                    <h4>bachelor of technology -<span>uk university</span></h4>
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                        Excepturi odit
+                                                        delectus, nobis temporibus deleniti quod maxime in ducimus
+                                                        nostrum voluptas?
+                                                    </p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <span class="date">2013-2016</span>
+                                                    <h4>bachelor of technology -<span>uk university</span></h4>
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                        Excepturi odit
+                                                        delectus, nobis temporibus deleniti quod maxime in ducimus
+                                                        nostrum voluptas?
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- education ends -->
+
+                                        <!-- exp start -->
+                                        <div class="tab-content" id="experience">
+                                            <div class="timeline">
+                                                <div class="timeline-item">
+                                                    <span class="date">2013-2016</span>
+                                                    <h4>web developer - <span> the webhooker</span></h4>
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+                                                        quibusdam
+                                                        minus
+                                                        cum. Culpa, aperiam. Quaerat.</p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <span class="date">2013-2016</span>
+                                                    <h4>web developer - <span> the webhooker</span></h4>
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+                                                        quibusdam
+                                                        minus
+                                                        cum. Culpa, aperiam. Quaerat.</p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <span class="date">2013-2016</span>
+                                                    <h4>web developer - <span> the webhooker</span></h4>
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+                                                        quibusdam
+                                                        minus
+                                                        cum. Culpa, aperiam. Quaerat.</p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <span class="date">2013-2016</span>
+                                                    <h4>web developer - <span> the webhooker</span></h4>
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+                                                        quibusdam
+                                                        minus
+                                                        cum. Culpa, aperiam. Quaerat.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- exp end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-text">
+            <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Devtest
+        </div>
+    </div>
+    <!--all the divisions-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        particlesJS("particles", {
+            "particles": {
+                "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#ffffff" }, "shape": {
+                    "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 },
+                    "image": { "src": "img/github.svg", "width": 100, "height": 100 }
+                }, "opacity": {
+                    "value": 0.5, "random": true,
+                    "anim": { "enable": true, "speed": 1, "opacity_min": 0.1, "sync": false }
+                }, "size": {
+                    "value": 3, "random": true,
+                    "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false }
+                }, "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 },
+                "move": {
+                    "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false,
+                    "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 }
+                }
+            }, "interactivity": {
+                "detect_on": "canvas", "events": {
+                    "onhover": { "enable": true, "mode": "repulse" },
+                    "onclick": { "enable": true, "mode": "push" }, "resize": true
+                }, "modes": {
+                    "grab": { "distance": 400, "line_linked": { "opacity": 1 } },
+                    "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 },
+                    "remove": { "particles_nb": 2 }
+                }
+            }, "retina_detect": true
+        });
+    </script>
+</body>
+
+</html>
